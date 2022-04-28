@@ -1,7 +1,7 @@
 pipeline {
      environment {
        ID_DOCKER = "afefgh"
-       DOCKERHUB_PASSWORD = credentials('heroku_api_key')
+       DOCKERHUB_PASSWORD = credentials('pwd')
        IMAGE_NAME = "alpinehelloworld"
        IMAGE_TAG = "latest"
        STAGING = "${ID_DOCKER}-staging"
