@@ -6,6 +6,9 @@ pipeline {
        IMAGE_TAG = "latest"
        STAGING = "${ID_DOCKER}-staging"
        PRODUCTION = "${ID_DOCKER}-production"
+       env.JOB_NAME = 'CD_Heroku'
+       env.BUILD_NUMBER = ''
+       env.BUILD_URL = 'https://pozosworkspace.slack.com/services/B03DBH4489Y?added=1'
      }
      agent none
      stages {
